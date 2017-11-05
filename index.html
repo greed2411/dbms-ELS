@@ -37,7 +37,7 @@
                 <p class="bold italic authors"><em>Posted by {{ article.author }}</em></p>
 
                 
-                <br> {% if article.tags %} {% for chip in article.tags %}
+                <br> {% if article.tags.all %} {% for chip in article.tags.all %}
                 <div class="chip blue-grey lighten-5 black-text">
                     {{ chip }}
                 </div>
